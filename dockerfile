@@ -63,10 +63,10 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 USER node
 
 # Set working directory
-WORKDIR /home/node/.n8n
+WORKDIR /data
 
 # Create a volume for persistent data
-VOLUME /home/node/.n8n
+VOLUME /data
 
 # Expose port 5678
 EXPOSE 5678
